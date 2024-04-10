@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Project</title>
+    <style>
+        *{
+    padding: 0;
+
+}
+#head{
+    padding: 0;
+    border: 1px solid rgba(0, 0, 255, 0.592);
+    box-shadow: 4px 4px 2px 3px rgb(149, 187, 196);
+    border-radius: 5px;
+    width: 70%;
+    background-color: antiquewhite;
+}
+h2{
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px gray;
+    width: 65%;
+    background-color: rgb(105, 95, 6);
+}
+input{
+    width: 30%;
+    border: 0px;
+    border-bottom: .5px solid black;
+    background-color: antiquewhite;
+}
+button{
+    height: 30px;
+    width: 70px;
+    border: 0px;
+    color: aliceblue;
+    background-color: rgb(105, 95, 6);
+    box-shadow: 3px 3px 5px grey;
+}
+#cityName{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+#day1{
+    height: fit-content;
+    width: 70%;
+    border: 0.5px solid rgba(128, 128, 128, 0.138);
+    margin-top:5% ;
+    background-color: rgba(166, 211, 205, 0.94);
+    box-shadow: 2px 2px 10px gray;
+    
+}
+
+#rdays{
+    width: 90%;
+    gap: 10px;
+    border: 1px solid rgba(112, 112, 177, 0.578);
+    margin: 5%;
+    
+    box-shadow: 2px 2px 10px 2px rgba(109, 141, 205, 0.917);
+    background-color: rgba(140, 184, 200, 0.861);
+    
+}
+#day2,#day3,#day4,#day5,#day6,#day7,#day8{
+    width: 25%;
+    border: 1px solid skyblue;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+    background-color: rgb(161, 209, 215);
+    box-shadow: 3px 3px 10px rgb(106, 162, 235);
+    
+    
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+table{
+    width: 99%;
+    border-style: inset;
+}
+th,td{
+    border: 1px outset rgb(109, 142, 172);
+    padding-inline-start: 3px;
+    border-radius: 5px 0 5px;
+    text-align: center;
+    gap: 2px;
+    height: 35px;
+    width: fit-content;
+    box-shadow: 2px 2px 5px gray;
+    
+    
+}
+
+
+h4{
+    text-align: center;
+}
+ws1,ws2,ws3,ws4,ws5,ws6,ws7,ws8{
+    text-align: center;
+
+}
+button:hover{
+    width: 60px;
+    height: 28px;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+footer{
+    background-color: brown;
+    color: aliceblue;
+    box-shadow: 5px 5px 5px gray;
+    width: 90%;
+    height: fit-content;
+    text-align: center;
+    margin-left: 50px;
+    
+
+}
+#day1:hover{
+    width: 73%;
+    box-shadow: 5px 5px 5px gray;
+    
+}
+
+
+#day2:hover{
+    
+    box-shadow: 10px 10px 10px rgb(106, 162, 235);
+}
+#day3:hover{
+ 
+    box-shadow: 10px 10px 10px rgb(106, 162, 235);
+}
+#day4:hover{
+    
+    box-shadow: 10px 10px 10px rgb(106, 162, 235);
+}
+#day5:hover{
+    
+    box-shadow: 10px 10px 10px rgb(106, 162, 235);
+}
+#day6:hover{
+   
+    box-shadow: 10px 10px 10px rgb(106, 162, 235);
+}
+#day7:hover{
+    
+    box-shadow: 10px 10px 10px rgb(106, 162, 235);
+}
+#day8:hover{
+    
+    box-shadow: 10px 10px 10px rgb(106, 162, 235);
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <div id="main">
+        <center>
+        <h2>Weather Forecasting for 7 days</h2>
+
+        <div id="head">
+            <P>Enter city name</P>
+            <p>City: &nbsp; <input type="text" placeholder="Select a city here...." id="inputValue"></p><button id="search-btn" onclick="btn()">Search</button>
+            <p id="cityName"></p>
+        </div>
+        
+        
+        <div id="day1">
+            <h3 style="text-align: center;">Today</h3>
+            <h3 id="d1"></h3>
+            <h3 id="t1"></h3>
+            <div>
+                <h4 id="weekday1"></h4>
+                <table border=".5px">
+                    
+                    <tr>
+                        <td colspan="3"><img id="wi1"></td>
+                    
+                    </tr>
+                    <tr>
+                        <th>Weather</th>
+                        <th>Humidity</th>
+                        <th>Temperature</th>
+                    </tr>
+                    <tr>
+                        <td id="wd1"></td>
+                        <td id="hd1"></td>
+                        <td id="td1"></td>
+                    </tr>
+                    <tr>
+                        <td id="ws1" colspan="3"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </center>
+
+
+        <div id="rdays" class="parent">
+            <div id="day2">
+                <h3 id="d2"></h3>
+                <div>
+                    <h4 id="weekday2"></h4>
+                    <table border=".5px">
+                        
+                        <tr>
+                            <td colspan="3"><img id="wi2"></td>
+                            
+                        </tr>
+                        <tr>
+                        <th>Weather</th>
+                        <th>Humidity</th>
+                        <th>Temperature</th>
+                    </tr>
+                        <tr>
+                            <td id="wd2"></td>
+                            <td id="hd2"></td>
+                            <td id="td2"></td>
+                        </tr>
+                        <tr>
+                            <td id="ws2" colspan="3"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="day3">
+                <h3 id="d3"></h3>
+                <div>
+                    <h4 id="weekday3"></h4>
+                    <table border=".5px">
+                        
+                        <tr>
+                            <td colspan="3"><img id="wi3"></td>
+                        
+                        </tr>
+                        <tr>
+                            <th>Weather</th>
+                            <th>Humidity</th>
+                            <th>Temperature</th>
+                        </tr>
+                        <tr>
+                            <td id="wd3"></td>
+                            <td id="hd3"></td>
+                            <td id="td3"></td>
+                        </tr>
+                        <tr>
+                            <td id="ws3" colspan="3"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="day4">
+                <h3 id="d4"></h3>
+                <div>
+                    <h4 id="weekday4"></h4>
+                    <table border=".5px">
+                        
+                        <tr>
+                            <td colspan="3"><img id="wi4"></td>
+                         
+                        </tr>
+                        <tr>
+                            <th>Weather</th>
+                            <th>Humidity</th>
+                            <th>Temperature</th>
+                        </tr>
+                        <tr>
+                            <td id="wd4"></td>
+                            <td id="hd4"></td>
+                            <td id="td4"></td>
+                        </tr>
+                        <tr>
+                            <td id="ws4" colspan="3"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="day5">
+                <h3 id="d5"></h3>
+                <div>
+                    <h4 id="weekday5"></h4>
+                    <table border=".5px">
+                        
+                        <tr>
+                            <td colspan="3"><img id="wi5"></td>
+                          
+                        </tr>
+                        <tr>
+                            <th>Weather</th>
+                            <th>Humidity</th>
+                            <th>Temperature</th>
+                        </tr>
+                        <tr>
+                            <td id="wd5"></td>
+                            <td id="hd5"></td>
+                            <td id="td5"></td>
+                        </tr>
+                        <tr>
+                            <td id="ws5" colspan="3"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="day6">
+                <h3 id="d6"></h3>
+                <div>
+                    <h4 id="weekday6"></h4>
+                    <table border=".5px">
+                        
+                        <tr>
+                            <td colspan="3"><img id="wi6"></td>
+                           
+                        </tr>
+                        <tr>
+                            <th>Weather</th>
+                            <th>Humidity</th>
+                            <th>Temperature</th>
+                        </tr>
+                        <tr>
+                            <td id="wd6"></td>
+                            <td id="hd6"></td>
+                            <td id="td6"></td>
+                        </tr>
+                        <tr>
+                            <td id="ws6" colspan="3"></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <div id="day7">
+                <h3 id="d7"></h3>
+                <div>
+                    <h4 id="weekday7"></h4>
+                    <table border=".5px">
+                        
+                        <tr>
+                            <td colspan="3"><img id="wi7"></td>
+                         
+                        </tr>
+                        <tr>
+                            <th>Weather</th>
+                            <th>Humidity</th>
+                            <th>Temperature</th>
+                        </tr>
+                        <tr>
+                            <td id="wd7"></td>
+                            <td id="hd7"></td>
+                            <td id="td7"></td>
+                        </tr>
+                        <tr>
+                            <td id="ws7" colspan="3"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="day8">
+                <h3 id="d8"></h3>
+                <div>
+                    <h4 id="weekday8"></h4>
+                    <table border=".5px">
+                        
+                        <tr>
+                            <td colspan="3"><img id="wi8"></td>
+                         
+                        </tr>
+                        <tr>
+                            <th>Weather</th>
+                            <th>Humidity</th>
+                            <th>Temperature</th>
+                        </tr>
+                        <tr>
+                            <td id="wd8"></td>
+                            <td id="hd8"></td>
+                            <td id="td8"></td>
+                        </tr>
+                        <tr>
+                            <td id="ws8" colspan="3"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <footer>Developed by David Raju.</footer>
+    <script>
+        function btn(){
+    var newvalue = document.getElementById('inputValue');
+    var cityName = document.getElementById('cityName');
+    cityName.innerHTML = newvalue.value;
+
+    fetch('http://api.openweathermap.org/data/2.5/forecast?q='+newvalue.value+'&appid=7868ef6c495e2ec624ceaf0c7f4794de&units=metric')
+.then(response=>response.json())
+.then(data=>{
+    for(i=0;i<8;i++){
+        document.getElementById('wd'+(i+1)).innerHTML = data.list[i].weather[0].description;
+        document.getElementById('hd'+(i+1)).innerHTML= Number(data.list[i].main.humidity)
+        document.getElementById('td'+(i+1)).innerHTML= Number(data.list[i].main.temp) + "º";
+        document.getElementById('wi'+(i+1)).src='http://openweathermap.org/img/w/'+data.list[i].weather[0].icon+'.png';
+        document.getElementById('ws'+(i+1)).innerHTML= "Wind Speed :" + Number(data.list[i].wind.speed);
+
+      }
+})
+.catch(err=>alert("Something went wrong"))
+
+
+const d = new Date();
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+function checkDay(day){
+    if(day + d.getDay() > 6){
+        return day + d.getDay()-7;
+    }
+    else{
+        return day + d.getDay();
+    }
+}
+document.getElementById('t1').innerHTML=d.toLocaleTimeString();
+document.getElementById('d1').innerHTML=d.toDateString(); 
+for(i=0;i<8;i++){
+    document.getElementById("weekday"+(i+1)).innerHTML=weekday[checkDay(i)];
+
+}
+
+}
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <style>
+
+#menu button{
+            padding: 7px 12px;
+            margin: 3px;
+            border-radius: 2px;
+            border-style: none;
+            font-weight: lighter;
+        }
+
+        button:hover{
+            
+            background-color: rgb(7, 77, 78);
+            box-shadow: 2px 2px 2px rgb(238, 240, 241);
+            color: white;
+            font-weight: bold;
+
+
+        }
+        #head{
+            display: flex;
+        }
+        #menu{
+            display: flex;
+        }
+        #logo{
+           margin: 10px;
+        }
+        #projects{
+            display: flex;
+           
+        }
+        #project{
+           
+            text-decoration-color:rgb(160, 7, 7) ;
+            text-decoration-thickness: 3px;
+            box-shadow: 2px 2px 2px rgb(60, 179, 194);
+        }
+
+        #projects div{
+            height: 50px;
+            width: 200px;
+            background-color: rgb(8, 90, 144);
+            border: 1px solid rgb(64, 6, 84);
+            margin: 2% 3% ;
+            text-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px;
+            border-radius: 3px;
+        }
+        #projects div:hover{
+            background-color: rgb(3, 46, 46);
+           
+        }
+
+        #projects div a{
+            font-weight: bolder;
+            text-decoration: none;
+            color: white;
+            margin: 5px;
+        }
+        h3{
+            text-align: center;
+            text-decoration: underline;
+            margin-top: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="head">
+            <div id="menu">
+                <a href="home.html"><button id="home">Home</button></a>
+                <a href="profile.html"><button id="profile">Profile</button></a>
+                <a href="projects.html"><button id="project">Projects</button></a>
+                <a href="contacts.html"><button id="contacts">Contact</button></a>
+            </div>
+            <div id="logo">
+                <img src="" alt="logo">
+            </div>
+        </div>
+        <h3>PROJECTS</h3>
+        <div id="projects">
+           
+            <div class="weatherapp">
+                <a href="proj.html"> <section>WEATHER FORECASTING APP</section></a> 
+             </div>
+             <div class="calculator">
+                <a href="calculator.html">CALCULATOR</a>
+             </div>
+             
+        </div>
+        
+    </div>   
+</body>
+</html>

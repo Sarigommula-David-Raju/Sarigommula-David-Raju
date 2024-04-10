@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAVID'S PROFILE</title>
+
+    <style>
+        #head, #contact, #details{
+            display: flex;
+            margin: 10px;
+        }
+        h5{
+            margin-bottom: 2%;
+            text-decoration:underline;
+            color: rgb(2, 35, 35);
+            font-size: 16px;
+        }
+        
+        #menu button{
+            padding: 7px 12px;
+            margin: 3px;
+            border-radius: 2px;
+            border-style: none;
+            font-weight: lighter;
+        }
+
+        button:hover{
+            
+            background-color: rgb(7, 77, 78);
+            box-shadow: 2px 2px 2px rgb(238, 240, 241);
+            color: white;
+            font-weight: bold;
+
+
+        }
+        #logo{
+           margin: 10px;
+        }
+
+        #photo{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+        #photo img{
+            height: 90%;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid darkcyan;
+            border-radius: 50%;
+            box-shadow:1px 1px 2px rgb(7, 128, 86);
+        }
+
+        section, p{
+            color: rgb(28, 2, 51);
+            text-wrap: wrap;
+            font-size: 16px;
+        }
+
+        #profile{
+          
+            text-decoration-color:rgb(160, 7, 7) ;
+            text-decoration-thickness: 3px;
+            box-shadow: 2px 2px 2px rgb(60, 179, 194);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="head">
+            <div id="menu">
+                <a href="home.html"><button id="home">Home</button></a>
+                <a href="profile.html"><button id="profile">Profile</button></a>
+                <a href="projects.html"><button id="projects">Projects</button></a>
+                <a href="contacts.html"><button id="contacts">Contact</button></a>
+            </div>
+            <div id="logo">
+                <img src="" alt="logo">
+            </div>
+        </div>
+        <div class="photobox">
+            <div id="photo">
+                <img src="pro.jpg" alt="photo">
+            </div>
+            <div class="name">
+                <h3>Sarigommula David Raju</h3>
+                <p>Seeking job oppurtunity as a software engineer in an enterprising environment. I am a driven
+                    individual with skills and expertise in the designing, planning and maintenance of 
+                    software programs. I wish to work with a diverse team that strives towards contributing
+                    to the company's vision and goals.
+                </p>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="mail">
+                devid9322@gmail.com
+            </div>
+            <div class="linkedin">
+                <p><a href=""></a></p>
+            </div>
+            
+        </div>
+        <div id="details">
+            <div class="left">
+                <div class="edu">
+                    <div class="btech">
+                        <h4>EDUCATION</h4>
+                        <h5>BTECH</h5>
+                        <section>Bachelor of Technology</section>
+                        <section>Vaagdevi Engineering College</section>
+                        <section>2021-2025</section>
+                    </div>
+                    <div class="inter">
+                        <h5>INTERMEDIATE</h5>
+                        <section>TSWR Center of Excellence</section>
+                        <section>Gowlidoddi, Rangareddy</section>
+                        <section>2019-2021</section>
+                    </div>
+                    <div class="ssc">
+                        <h5>SSC</h5>
+                        <section>TSWR Center of Excellence</section>
+                        <section>Alugunoor, Karimnagar</section>
+                        <section>2019</section>
+                    </div>
+                
+                </div>
+                <div id="proj">
+                    <H5>PERSONAL PROJECTS</H5>
+                    <section>Weather forecasting web application using HTML, CSS, JS, API</section>
+                    <H5>INTERNSHIPS</H5>
+                   <section>full stack web development</section>
+                   <section>teachnook</section>
+                   <section></section>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="skills">
+                    <h5>SKILLS</h5>
+                    <section>Core java</section>
+                    <section>SQL</section>
+                    <section>HTML</section>
+                    <section>CSS</section>
+                    <section>Java Script</section>
+                    <section>Python</section>
+                    <section>Graphic designing (ADOBE ILLUSTRATOR)</section>
+                          
+                </div>
+                <div class="achiements">
+                    <h5>ACHIEVEMENTS</h5>
+                    <section>Chairperson IEEE VEC SB [2023]</section>
+                    
+                    <section>Secretary IEEE VEC Computer Society[2024]</section>
+                </div>
+                <div class="cert">
+                    <h5>CERTIFICATES</h5>
+                    <section>Web Development</section>
+                    <section>I completed course on the web development and got certificate with
+                        TEACHNOOK 
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
