@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> David's Website</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #mainpage{
+        
+            background-color: rgb(192, 213, 213);
+            height: 100vh;
+            width: 100%;
+            
+
+        }
+        #head{
+            display: flex;
+            align-content: space-between;
+           
+            
+        }
+        #menu{
+            display: flex;
+            margin: 10px;
+           
+            
+        }
+
+        #menu button{
+            padding: 7px 12px;
+            margin: 3px;
+            border-radius: 2px;
+            border-style: none;
+            font-weight: lighter;
+        }
+
+        button:hover{
+            
+            background-color: rgb(7, 77, 78);
+            box-shadow: 2px 2px 2px rgb(238, 240, 241);
+            color: white;
+            font-weight: bold;
+
+
+        }
+        #logo{
+           margin: 10px;
+        }
+    
+
+        .photo{
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+        }
+        .photo img{
+            height: 90%;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid darkcyan;
+            border-radius: 1px 5px 1px 5px;
+            box-shadow:1px 1px 2px rgb(7, 128, 86);
+        }
+
+        #logo{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        #display{
+            display: flex;
+            margin: 5%;
+        }
+       #home{
+           
+            text-decoration-color:rgb(160, 7, 7) ;
+            text-decoration-thickness: 3px;
+            box-shadow: 2px 2px 2px rgb(60, 179, 194) ;
+            
+        }
+        .name a{
+            margin: 3px;
+            padding: 2px;
+        }
+        .name h2{
+            font-size: 30px;
+            color: rgb(229, 33, 108);
+            margin: 2px;
+        }
+        #highlights{
+            display: flex;
+            margin: 5px;
+        }
+        .hl{
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(94, 22, 63);
+        }
+        #highlights div{
+            margin: 10px;
+            height:50px;
+            width: 200px;
+            background-color: rgb(237, 239, 240);
+            
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
+        #highlights div a{
+            font-size: 18px;
+            margin: 10%;
+            text-wrap: wrap;
+            text-decoration: none;
+            font-weight: bolder;
+            text-align: center;
+            color: rgb(4, 48, 95);
+        }
+        #highlights div:hover{
+            box-shadow: 2px 2px 1px white;
+            background-color: rgb(7, 77, 78);
+           
+             
+        }
+        #highlights div a:hover{
+           color: white;
+
+        }
+        label{
+            margin: 5%;
+            text-decoration: underline;
+            text-decoration-color: rgb(12, 100, 100);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="mainpage">
+        <div id="head">
+        <div id="menu">
+            <a href="home.html"><button id="home">Home</button></a>
+            <a href="profile.html"><button id="profile">Profile</button></a>
+            <a href="projects.html"><button id="projects">Projects</button></a>
+            <a href="contacts.html"><button id="contacts">Contact</button></a>
+        </div>
+        <div id="logo">
+            <img src="" alt="logo">
+        </div>
+        </div>
+        <div id="display">
+            <div class="photo">
+                <img src="pro.jpg" alt="photo">
+            </div>
+            <div class="name">
+                <h2>David Raju</h2>
+                <h4>Web Developer | Graphic Designer</h4>
+                <a href=""><img src="" alt="fb"></a>
+                <a href=""><img src="" alt="in"></a>
+                <a href=""><img src="" alt="e-m"></a>
+                
+            </div>
+        </div>
+
+        <label for="" class="hl">Highlights</label>
+        <div id="highlights">
+             
+            <div class="designworks">
+                <a href="">Design Works</a>
+            </div>
+
+            <div class="results">
+                <a href="">Check for Results</a>
+            </div>
+
+            <div class="jobnotifications">
+                <a href="">Job Notifications</a>
+            </div>
+            <div class="editonline">
+                <a href="">Edit Online</a>
+            </div>
+        </div>
+
+    
+
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
