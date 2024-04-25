@@ -410,7 +410,7 @@ footer{
     var cityName = document.getElementById('cityName');
     cityName.innerHTML = newvalue.value;
 
-    fetch('http://api.openweathermap.org/data/2.5/forecast?q='+newvalue.value+'&appid=7868ef6c495e2ec624ceaf0c7f4794de&units=metric')
+    fetch('http://api.openweathermap.org/data/2.5/forecast?q='+newvalue.value+'&appid=5b1f9bc118f6a4486311513aaa520c35&units=metric')
 .then(response=>response.json())
 .then(data=>{
     for(i=0;i<8;i++){
